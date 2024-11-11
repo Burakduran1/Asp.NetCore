@@ -13,7 +13,7 @@ namespace DataAccessLayer.Concrete
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("server = Burak;database = DbWebOOP1;integrated security = true;");
+            optionsBuilder.UseSqlServer();
         }
         public DbSet<Product> Products { get; set; } //Product ismi c# da kullancağım isim. Products ise sql tarafında kullancağım isim
         public DbSet<Customer> Customers { get; set; }
